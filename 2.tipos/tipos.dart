@@ -102,7 +102,7 @@ void main() {
 
   var maps1 = {'red': 'rojo', 'blue': "azul"};
 
-  maps1.clear();
+  //maps1.clear();
   maps1['green'] = 'verde';
 
   print(lista1);
