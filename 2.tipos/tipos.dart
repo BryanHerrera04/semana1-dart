@@ -76,4 +76,48 @@ void main() {
   if (varibleBooleanaNull == null) {
     print("Esta variable es null");
   }
+
+  //Listas
+
+  var lista1 = ['mazda', 'kia', 'renault'];
+  List<String> lista2 = ['mazda', 'kia', 'renault'];
+  //Agregar una lista dentro de otra lista
+  var lista3 = ["chevrolet", ...lista1];
+  lista3.add("BMW");
+
+  //Null
+  var lista4;
+  List<String>? lista6 = null;
+  // Cuando esta null se aconseja el ? c en la validación y/o agregaciuón
+  //Spread
+  var lista5 = [...lista3, ...?lista4, ...?lista6];
+
+  var listaSet = {'mazda', 'kia', 'reanault', 'reanault'};
+  listaSet.add("mazdados");
+  listaSet.add("kia");
+  listaSet.clear();
+
+  var lista7 = [1, 2.0, "hola", true];
+  List<dynamic> list8 = [1, 2.0, "hola", true];
+
+  var maps1 = {'red': 'rojo', 'blue': "azul"};
+
+  maps1.clear();
+  maps1['green'] = 'verde';
+
+  print(lista1);
+  print(lista2);
+  print(lista2.last); //Ultimo
+  print(lista2.reversed); //Reversed
+  print(lista3);
+  print(lista5);
+  print(listaSet);
+  print(lista7);
+  print(maps1);
+  print(maps1.length);
+  maps1.forEach((key, value) {
+    print(key);
+    print(value);
+  });
+  maps1.forEach((key, value) => print(key));
 }
