@@ -51,7 +51,7 @@ void main() {
   //var texto6 = "El resultado de sumar 3 + 3 es ${texto1}";
   //print(texto6);
 
-  //-------Estructura
+  ///Estructura
   //Multilenia
   var texto10 = '''
     CREATE TABLE Person(
@@ -61,7 +61,19 @@ void main() {
 
   print(texto10);
 
-  //caracter
+  //caracter Raw
   var texto11 = r'mostrar caracterir \';
   print(texto11);
+
+  //Booleans
+  var texto12 = '';
+  //Validación sí es vacio "isEmpty"
+  if (texto12.isEmpty) {
+    print("es vacio");
+  }
+
+  var varibleBooleanaNull = null;
+  if (varibleBooleanaNull == null) {
+    print("Esta variable es null");
+  }
 }
